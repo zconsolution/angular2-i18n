@@ -1,3 +1,15 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+  <h1>
+    Angular 2 with i18n
+  </h1>
+</div>
+
+<div class="container">
+    <label>
+      <b>{{ 'HOME.SELECT' | translate }} : </b>
+      <select #langSelect (change)="translate.use(langSelect.value)">
+        <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang">{{ lang }}</option>
+      </select>
+    </label>
+    <h2 class="textColor">{{ 'HOME.TITLE' | translate }}</h2>
+</div>
