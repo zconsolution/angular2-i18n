@@ -9,13 +9,13 @@ This project used node version 6.9.2
 1. Install angular-cli :
 	  npm install -g angular-cli 
 
-2. Clone project and goto project directory
+2. Clone project and goto project directory :
 	  npm install
       
-3. Install ng2-translate
+3. Install ng2-translate : 
     npm install ng2-translate
 		
-4. To run project
+4. To run project : 
 	  ng serve	
 
 ## Development server
