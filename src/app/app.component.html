@@ -7,9 +7,11 @@
 <div class="container">
     <label>
       <b>{{ 'HOME.SELECT' | translate }} : </b>
-      <select #langSelect (change)="translate.use(langSelect.value)">
-        <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang">{{ lang }}</option>
-      </select>
+      <ng-container  *ngFor="let lang of translate.getLangs()">
+          <a href="#" id="{{lang.short_name}}" (click)="translate.use(lang.short_name)">
+            <span class="container-padding"> {{ lang.long_name }} </span>
+          </a>
+      </ng-container>
     </label>
     <h2 class="textColor">{{ 'HOME.TITLE' | translate }}</h2>
 </div>
