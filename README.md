@@ -7,7 +7,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 This project used node version 6.9.2 
 
 1. Install angular-cli :
-npm install -g angular-cli 
+npm install -g angular-cli  Or npm install -g @angular/cli
 
 2. Clone project and goto project directory :
 npm install
